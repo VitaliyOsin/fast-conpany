@@ -1,0 +1,27 @@
+.count-of-lines-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #999;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 25px;
+}
+
+.count-of-lines-span-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.count-of-lines-span-page:hover {
+  color: #555;
+}
+
+.set {
+  background: #def;
+  cursor: default;
+}

@@ -3,7 +3,13 @@ import SearchStatus from "./searchStatus";
 import User from "./user";
 import ResetBtn from "./resetBtn";
 
-const Users = ({ users, hendleDelete, hendleReset, bookedHendler }) => {
+const Users = ({
+  users,
+  usersOnPage,
+  hendleDelete,
+  hendleReset,
+  bookedHendler,
+}) => {
   return (
     <>
       <SearchStatus users={users} />
@@ -21,7 +27,7 @@ const Users = ({ users, hendleDelete, hendleReset, bookedHendler }) => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
+          {usersOnPage.map((user) => (
             <User
               key={user._id}
               user={user}
